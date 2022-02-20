@@ -1,10 +1,9 @@
-[light] {
-    a {
-        color: $black;
-    }
+@import url("https://use.typekit.net/dly4ncl.css");
+
+body {
+    font-family: montserrat, sans-serif;
 }
-[dark] body {
-    a {
-        color: $white;
-    }
+h1 {
+    font-family: suburban, sans-serif;
+    font-size: clamp(2.5em, 4.5vw, 4rem);
 }

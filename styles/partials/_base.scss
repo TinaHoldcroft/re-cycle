@@ -10,12 +10,34 @@ html {
 html,
 body {
     scroll-behavior: smooth;
-}
-[light] body {
     background-color: $white;
-    color: $black;
+
+
+
+}#__next {
+    @include flex(column nowrap, flex-start, center, center, center, 0);
+   
 }
-[dark] body {
-    background-color: $black;
-    color: $white;
+main {
+    @include flex(column nowrap, flex-start, center, center, center, 0);
+    background-color: #ffffff;
+    width: 80vw;
+    box-shadow: $box-shadow;
+}
+.choose-languange {
+    @include flex(column nowrap, center, center, center, center, 1vmax);
+    flex: auto 1 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    div {
+        @include flex(row nowrap, space-between, center, center, center, 4vmax);
+    }
+    img {
+        width: 10vmax;
+    }
 }
