@@ -9,14 +9,6 @@ export default function Home() {
                 <title>Re-Cycle</title>
             </Head>
 
-            <header>
-                <img
-                    style={{ width: '80vw' }}
-                    src='./vintage-bicycle.jpg'
-                    alt=''
-                />
-            </header>
-
             <MasterForm />
         </>
     )
