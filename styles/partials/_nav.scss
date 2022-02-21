@@ -1,19 +1,28 @@
 nav {
-    @include flex(column nowrap, flex-start, center, center, center, 0);
+    @include flex(column nowrap, flex-start, center, center, center, 8vh);
     background-color: $teal;
     width: 100vw;
-    h1, p, a, li {
+    padding: 8vh 0 1.5rem 0;
+    img {
+        width: 200px;
+        cursor: pointer;
+    }
+    a,
+    li {
         color: #ffffff;
+        font-size: 0.9em;
+        letter-spacing: 0.25em;
     }
     ul {
-        @include flex(row nowrap, flex-start, center, center, center, 4em);
+        @include flex(row nowrap, flex-start, center, center, center, 8em);
         list-style: none;
         li {
             text-transform: uppercase;
         }
     }
 }
-.english, .norsk {
+.english,
+.norsk {
     position: fixed;
     bottom: 1rem;
     right: 1rem;

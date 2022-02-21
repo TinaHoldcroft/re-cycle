@@ -17,7 +17,7 @@ const Language = () => {
 
     return (
         <>
-            <Link className='language-toggle' href={language ? '/english' : '/norsk'}>
+            <Link className='language-toggle'>
                 <button
                     accessKey="l"
                     title={language ? "English" : "Norsk bokmål"}

@@ -1,0 +1,11 @@
+.choose-languange {
+    @include flex(row nowrap, space-between, center, center, center, 4vmax);
+    flex: auto 1 1;
+    border: none;
+    legend {
+        text-align: center;
+    }
+    img {
+        width: 10vmax;
+    }
+}
