@@ -14,7 +14,6 @@ const Nav = () => {
         document.documentElement.setAttribute('lang', 'no');
     };
     
-
     if (language === 'no') {
         return console.log('no')
     }

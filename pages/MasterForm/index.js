@@ -27,7 +27,7 @@ class MasterForm extends React.Component {
     render() {
         return (
             <>
-                <form onSubmit={this.handleSubmit}>
+                <form className={'form__' + this.state.currentStep} onSubmit={this.handleSubmit}>
                     <Step1
                         currentStep={this.state.currentStep}
                         handleChange={this.handleChange}

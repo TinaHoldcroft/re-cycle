@@ -1,0 +1,12 @@
+footer {
+    @include flex(column nowrap, center, center, center, center, 1.5em);
+
+    background-color: $teal;
+    width: 100%;
+    max-width: 100vw;
+    height: 15rem;
+    color: $white;
+    img {
+        height: 2rem;
+    }
+}

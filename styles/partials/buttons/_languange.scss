@@ -1,11 +1,26 @@
 .choose-languange {
-    @include flex(row nowrap, space-between, center, center, center, 4vmax);
-    flex: auto 1 1;
+    @include flex(column nowrap, center, center, center, center, 3vmax);
     border: none;
-    legend {
-        text-align: center;
+    background-color: rgba(255, 255, 255);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    div {
+        @include flex(row nowrap, center, center, center, center, 3vmax);
     }
     img {
         width: 10vmax;
+        transition: 0.2s;
+        border-radius: 60px;
+        border: solid transparent 4px;
+        &:hover {
+            transform: scale(1.04);
+            transition: 0.2s;
+            border: solid rgba(204, 204, 204, 0.5) 4px;
+        }
     }
 }
+.choose-languange + main { margin: 0; }

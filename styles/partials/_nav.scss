@@ -12,9 +12,10 @@ nav {
         color: #ffffff;
         font-size: 0.9em;
         letter-spacing: 0.25em;
+        font-size: clamp(0.8em, 2vw, 1rem);
     }
     ul {
-        @include flex(row nowrap, flex-start, center, center, center, 8em);
+        @include flex(row wrap, flex-start, center, center, center,  0 4vw);
         list-style: none;
         li {
             text-transform: uppercase;
