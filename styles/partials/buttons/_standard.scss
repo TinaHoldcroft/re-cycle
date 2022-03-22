@@ -1,0 +1,20 @@
+.btn-group {
+    @include flex(row nowrap, space-around, stretch, auto, flex-start, 1rem);
+    width: 60%;
+    .btn-with-text {
+        @include flex(column nowrap, flex-start, center, auto, flex-start, 0.8em);
+        p {
+            max-width: 60%;
+            font-size: 0.9em;
+        }
+    }
+}
+.btn {
+    background-color: $teal;
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.5em;
+    padding: 1em 2em;
+    border-radius: 30px;
+}

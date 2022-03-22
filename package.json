@@ -1,5 +1,5 @@
 {
-  "name": "next-template",
+  "name": "re-cycle",
   "private": true,
   "scripts": {
     "dev": "next dev",

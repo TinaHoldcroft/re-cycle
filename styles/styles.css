@@ -45,6 +45,7 @@ main {
   text-align: center;
   background-color: #ffffff;
   width: 80vw;
+  max-width: 1100px;
   box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48);
   margin: 0 0 10vmax 0;
 }
@@ -269,6 +270,48 @@ footer img {
 
 .choose-languange + main {
   margin: 0;
+}
+
+.btn-group {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-self: auto;
+  align-content: flex-start;
+  gap: 1rem;
+  width: 60%;
+}
+.btn-group .btn-with-text {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: auto;
+  align-content: flex-start;
+  gap: 0.8em;
+}
+.btn-group .btn-with-text p {
+  max-width: 60%;
+  font-size: 0.9em;
+}
+
+.btn {
+  background-color: #31666B;
+  color: #EEEEEE;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.5em;
+  padding: 1em 2em;
+  border-radius: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
